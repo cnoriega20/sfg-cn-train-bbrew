@@ -8,4 +8,6 @@ public interface BeerService {
     Beer getBeerById(UUID beerId);
 
     Beer saveNewBeer(Beer beer);
+
+    void updateBeer(UUID beerId, Beer beer);
 }
