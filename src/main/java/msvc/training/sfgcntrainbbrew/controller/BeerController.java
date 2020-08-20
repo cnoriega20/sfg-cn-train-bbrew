@@ -21,6 +21,9 @@ public class BeerController {
         this.beerService = beerService;
     }
 
+       /* online UUID generator: https://www.uuidgenerator.net/
+       * http://localhost:8080/api/vi/beerService/70736582-9521-41b4-8b54-a7a9086b8b5d
+       * */
     @GetMapping("/{beerId}")
     public ResponseEntity<Beer> getBeer(@PathVariable("beerId") UUID beerId){
         return new ResponseEntity<>(beerService.getBeerById(beerId), HttpStatus.OK);
