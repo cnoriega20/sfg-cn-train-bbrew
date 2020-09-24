@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.UUID;
 
@@ -22,6 +23,7 @@ public class BeerEntity {
 
     private String beerStyle;
 
+    private BigDecimal price;
 
     private Long upc;
 
