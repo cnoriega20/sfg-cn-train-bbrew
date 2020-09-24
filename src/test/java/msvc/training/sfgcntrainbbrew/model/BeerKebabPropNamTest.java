@@ -7,14 +7,14 @@ import org.springframework.boot.test.autoconfigure.json.JsonTest;
 import org.springframework.test.context.ActiveProfiles;
 
 @JsonTest
-@ActiveProfiles("snake")
+@ActiveProfiles("kebab")
 @Slf4j
-public class BeerSnakePropNameTest extends BaseTest{
+public class BeerKebabPropNamTest extends BaseTest {
 
     @Test
-    void testBeerSnakePropertyName() throws JsonProcessingException {
+    public void testBeerKebabNamePropertyStrategy() throws JsonProcessingException {
         Beer beer = getBeer();
         String json = objectMapper.writeValueAsString(beer);
-        log.info("Beer with Snake PropertyNamingStrategy: " + json);
+        log.info("Beer with Kebab PropertyNamingStrategy: " + json);
     }
 }
