@@ -16,7 +16,7 @@ public class BaseTest {
                 .id(UUID.randomUUID())
                 .beerName("Heineken")
                 .beerStyle("Pilsner")
-                .price(new BigDecimal(5.00))
+                .price(new BigDecimal(5.75))
                 .upc(123456L)
                 .createdDate(OffsetDateTime.now())
                 .lastUpdatedDate(OffsetDateTime.now())

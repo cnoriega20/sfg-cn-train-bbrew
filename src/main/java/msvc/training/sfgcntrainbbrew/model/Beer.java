@@ -1,5 +1,6 @@
 package msvc.training.sfgcntrainbbrew.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -33,10 +34,13 @@ public class Beer {
     private Long upc;
 
     @Positive
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
     private BigDecimal price;
 
+    //@JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss,nnnnnnnnnZ")
     private OffsetDateTime createdDate;
 
+    //@JsonFormat(pattern = "yyyy-MM-dd", shape = JsonFormat.Shape.STRING )
     private OffsetDateTime lastUpdatedDate;
 
 
